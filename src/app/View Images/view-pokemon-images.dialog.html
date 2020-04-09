@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>{{data.name}}</h1>
+<button type="button" class="pull-right" mat-dialog-close><em class="material-icons">close</em></button>
+<div mat-dialog-content>
+<!-- Image viewer -->
+    <button (click)="previous()" [disabled]="currentImageIndex===0">Previous</button>
+    <mat-form-field>
+      <img [src]="srcArray[currentImageIndex]" alt="image not found">
+    </mat-form-field>
+    <button (click)="next()" [disabled]="currentImageIndex===srcArray.length-1">Next</button>
+</div>

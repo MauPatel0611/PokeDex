@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>{{data.name}}</h1>
+<button type="button" class="pull-right" mat-dialog-close><em class="material-icons">close</em></button>
+<div mat-dialog-content>
+  <mat-dialog-content>
+    <img [src]="data.poke.sprites.front_shiny" alt="">
+    <p><strong>Height: </strong>{{data.poke.height}}m  
+    <strong>Weight: </strong>{{data.poke.weight}}kg</p>
+    <p><strong>Base XP: </strong>{{data.poke.base_experience}}</p>
+    </mat-dialog-content>
+    <mat-dialog-actions class="text-right">
+        <button type="button" mat-dialog-close (click)="viewImages()">Other Images</button>
+    </mat-dialog-actions>
+</div>

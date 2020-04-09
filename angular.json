@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Poke-Dex"
+    }
+  },
+  "defaultProject": "Poke-Dex",
+  "cli": {
+    "analytics": false
+  }
 }
