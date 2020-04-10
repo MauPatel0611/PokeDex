@@ -48,7 +48,6 @@ export class AppComponent implements OnInit {
     this.service.getPoke(pokemon.id)
       .subscribe(res => {
         pokemon.poke=res;
-        pokemon.showData=true;
          const dialogRef = this.dialog.open(ViewPokemonDetailsComponent, { disableClose: true, hasBackdrop: true });
          dialogRef.componentInstance.data=pokemon;
       }
